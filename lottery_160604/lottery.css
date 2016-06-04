@@ -1,0 +1,15 @@
+#stacks{
+	background-color:white;
+	width:550px;
+	height:430px;
+	padding:20px;
+	margin: auto;
+	border-radius: 15px;
+	border-style: solid;
+	border-color:black;
+	border-width: thin;
+	}
+*{
+	font-family: sans-serif;
+	text-align: center;
+	}

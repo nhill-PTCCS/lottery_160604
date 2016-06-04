@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<!--
+homework: by tuesday come back with js program [form] that will allow me to tell me how long would i have to buy x'number of tickets a day in order to win based on the published odds of winning?
+
+expectations of winning
+-->
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="lottery.css">
+
+<title>Mega Millions Calculator</title>
+
+
+<style>
+
+
+</style>
+
+</head>
+
+<body>
+<!--	odds of winning 1 in 258,890,850-->
+
+
+<div class="container">
+<!--div with id equal to stacks-->
+<div id="stacks">
+
+<h1><strong>MegaMillions Calculator</strong></h1>
+<p>Enter a number of tickets per day <br/>to determine how long it would take to win.</p>
+<h1><strong>GOOD LUCK!</strong></h1>
+<br/>
+<hr>
+<br/>
+<!-- label with a class of uno-->
+<label class="uno">Number of tickets purchased per day: </label>
+<br/><br/>
+<!--input field with id equal to tickets and a type equal to number-->
+<input id="tickets" type="number">
+<br/>
+<br/>
+<!--button with an onclick event equal to the function getDays-->
+<button onclick="getDays()">Calculate</button>
+<br/>
+<br/>
+<!--label with a class of dos-->
+<label class="dos">Number of days to achieve favorable odds:</label>
+<br/>
+<!--paragraph with id equal to total-->
+<p id="total"></p>
+</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<script>
+//variable x is equla to the odds
+var x = 258890850;
+//variable y is equal to the input value with the same id above
+var y = "tickets";
+//function getDays that takes in parameters x and y
+function getDays(x,y){
+//variable z is equal to x divided by y
+var z = x / y;
+//display getElementById with id total that is equal to z
+document.getElementById("total").innerHTML = z;
+
+}
+
+</script>
+
+</body>
+
+</html>
